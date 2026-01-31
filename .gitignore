@@ -1,0 +1,41 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+easyocr_env/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+.dmypy.json
+
+# Build & distribution artifacts
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# IDE / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project data & outputs
+outputs/
+output.csv
+media/
+test_media/
+IELTS-Scanner_data_folder/
+Excel/
+models/

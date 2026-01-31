@@ -1,0 +1,13 @@
+easyocr
+pdf2image
+opencv-python
+numpy
+pillow
+pandas
+openpyxl
+streamlit
+xlsxwriter
+Pillow 
+scikit-image
+PyPDF2
+watchdog
