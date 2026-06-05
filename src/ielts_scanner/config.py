@@ -1,8 +1,11 @@
 import os
-from PIL import Image
 
-# Safe guard for large images
-Image.MAX_IMAGE_PIXELS = None
+try:
+    from PIL import Image
+
+    Image.MAX_IMAGE_PIXELS = None
+except ImportError:
+    Image = None
 
 # Prevent PyTorch MPS memory watermark issues (no-op on non-MPS systems)
 os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"

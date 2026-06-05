@@ -35,6 +35,12 @@ streamlit run app.py
 ```
 The app will create `IELTS-Scanner_data_folder` for sessions, outputs, and model cache.
 
+## Validation
+```bash
+PYTHONPATH=src python -m unittest discover -s tests
+PYTHONPATH=src python -m compileall -q src app.py
+```
+
 ## Usage notes
 - Upload PNG/JPG/PDF certificates in the UI; PDFs are split into single pages automatically.
 - Excel output is offered when processing completes; rejected/faulty rows go to dedicated sheets.
